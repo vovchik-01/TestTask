@@ -1,4 +1,6 @@
-package fileReaderAndWriter;
+package IOReaderAndWriter;
+
+import repository.FileWriterInterface;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;

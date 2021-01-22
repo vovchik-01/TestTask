@@ -7,12 +7,12 @@ import java.util.List;
 
 public class OutputFileWriter {
 
-    private final String outputFileName = "./src/main/resources/output.txt";
+    private static final String OUTPUT_FILE_NAME = "./src/main/resources/output.txt";
 
 
     public void writeOutputFile(List<String> dataForWrite) {
 
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(outputFileName))) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(OUTPUT_FILE_NAME))) {
             for (String line : dataForWrite) {
                 writer.write(line);
                 writer.newLine();

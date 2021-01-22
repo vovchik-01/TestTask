@@ -44,11 +44,11 @@ public class Operations {
      */
     public static String reverseLine(String line) {
         char[] charArray = line.toCharArray();
-        String resultString = "";
+        StringBuilder resultString = new StringBuilder();
         for (int i = charArray.length - 1; i >= 0; i--) {
-            resultString += charArray[i];
+            resultString.append(charArray[i]);
         }
-        return resultString;
+        return resultString.toString();
     }
 
 

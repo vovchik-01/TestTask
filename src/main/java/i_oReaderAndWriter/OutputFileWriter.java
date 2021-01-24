@@ -1,4 +1,4 @@
-package IOReaderAndWriter;
+package i_oReaderAndWriter;
 
 import repository.FileWriterInterface;
 
@@ -9,7 +9,6 @@ import java.util.List;
 
 public class OutputFileWriter implements FileWriterInterface {
 
-    private static final String OUTPUT_FILE_NAME = "./src/main/resources/output.txt";
 
     @Override
     public void writeOutputFile(List<String> dataForWrite) {
@@ -23,6 +22,4 @@ public class OutputFileWriter implements FileWriterInterface {
             e.printStackTrace();
         }
     }
-
-
 }
